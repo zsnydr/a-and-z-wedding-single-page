@@ -11,7 +11,7 @@
 /* Landing */
 
 .landing{
-  height: 333vh;
+  height: 275vh;
   background-image: url('./img/champagne.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,7 +56,7 @@
 
 .dates{
   /* font-size: 400px; */
-  font-size: 24vw;
+  font-size: 20vw;
   font-family: 'aw-conqueror-didot', serif;
   margin-bottom: 60px;
 }
@@ -82,8 +82,9 @@
 }
 
 .bottom-section .content-wrapper{
-  background-color: #1B1E23;
-  font-size: 1.5vw;
+  background-color: rgb(13, 13, 13);
+  /* background-color: #1B1E23; */
+  font-size: 1.25vw;
   color: rgba(242, 242, 242, 0.75);
   display: flex;
   flex-direction: column;
@@ -98,10 +99,21 @@
 
 .bottom-section .content-wrapper .title{
   font-size: 2vw;
+  border: 2px solid rgba(242, 242, 242, 0.75);
+  padding: 10px 20px;
 }
 
 .bottom-section .content-wrapper .address{
   text-align: center;
+}
+
+.bottom-section .content-wrapper .address div:first-child{
+  font-size: 1.75vw;
+  margin-bottom: 10px;
+}
+
+.more-info{
+  font-size: 1.25vw;
 }
 
 /* Map */
@@ -152,7 +164,7 @@ and (orientation : portrait) {
   }
 
   .bottom-section .content-wrapper .more-info{
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 
@@ -195,7 +207,7 @@ and (max-device-width : 812px) {
 
   .bottom-section .bottom-wrapper{
     width: 100% !important;
-    height: 400px !important;
+    height: 500px !important;
   }
 
   .bottom-section .content-wrapper{
@@ -211,7 +223,11 @@ and (max-device-width : 812px) {
     font-size: 3vw;
   }
 
+  .bottom-section .content-wrapper .address div:first-child{
+    font-size: 4vw;
+  }
+
   .bottom-section .content-wrapper .more-info{
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 }

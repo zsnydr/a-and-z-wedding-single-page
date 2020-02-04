@@ -254,9 +254,16 @@ function initMap() {
   // The marker, positioned at Uluru
   // var marker = new google.maps.Marker({animation: google.maps.Animation.DROP, title: 'EVERGREEN', position: point, map: map});
 
-    var contentString = '<div id="content" style="color:black">'+
-            'The Evergreen'+
-            '</div>';
+    var contentString = 
+      '<div id="content" style="color:black">'+
+        'The Evergreen'+
+      '</div>'+
+      '<div id="content" style="color:black">'+
+        '618 SE Alder St.'+
+      '</div>'+
+      '<div id="content" style="color:black">'+
+        'Portland, OR 97214'+
+      '</div>';
 
         var infowindow = new google.maps.InfoWindow({
           content: contentString,
@@ -266,10 +273,12 @@ function initMap() {
           animation: google.maps.Animation.DROP,
           position: point,
           map: map,
-          title: 'Uluru (Ayers Rock)'
+          // title: 'Uluru (Ayers Rock)'
         });
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
+        // marker.addListener('click', function() {
+          // infowindow.open(map, marker);
+        // });
+
+        // infowindow.open(map, marker);
 }
 
