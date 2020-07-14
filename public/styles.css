@@ -8,11 +8,41 @@
   font-family: sans-serif; 
 }
 
+.top-banner{
+  background-color: rgb(13, 13, 13);
+  font-size: 1.15vw;
+  color: rgba(242, 242, 242, 0.75);
+  padding: 30px;
+}
+
+.top-banner-inner{
+  border: 1px solid rgba(242, 242, 242, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+.top-banner div div{
+  text-align: center;
+  font-family: 'futura-pt', sans-serif;
+}
+
+.top-banner div div:nth-child(2){
+  margin-bottom: 20px;
+}
+
 /* Landing */
 
 .landing{
-  height: 275vh;
-  background-image: url('./img/champagne.jpg');
+  height: 175vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  ),
+  url('./img/hero_wide_fores.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -184,6 +214,10 @@ and (orientation : landscape) {
 @media only screen
 and (min-width : 375px)
 and (max-device-width : 812px) {
+  .top-banner{
+    font-size: 2.0vw;
+  }
+
   .landing{
     height: 100vh;
   }
