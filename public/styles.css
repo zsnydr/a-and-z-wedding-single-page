@@ -215,7 +215,7 @@ and (orientation : landscape) {
 and (min-width : 375px)
 and (max-device-width : 812px) {
   .top-banner{
-    font-size: 2.0vw;
+    font-size: 3vw;
   }
 
   .landing{
